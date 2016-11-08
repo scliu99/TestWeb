@@ -1,0 +1,48 @@
+﻿C:\Web\TestWeb>git add .
+
+C:\Web\TestWeb>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   "N1056720_\347\260\241\347\266\255\350\276\260.txt"
+
+
+C:\Web\TestWeb>git commit -m "Upload by N1056720"
+[master b24a63b] Upload by N1056720
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "N1056720_\347\260\241\347\266\255\350\276\260.txt"
+
+原本的錯誤訊息如上，中文檔名會造成\347\260\241\...的錯誤辨識。
+參考老師提供的 Git教學網站之後，裡面有提供中文檔名的解決方式。
+指令如下：
+
+C:\Web\TestWeb>git config --global core.quotepath off
+
+
+打上以上指令後，在中文檔名的辨識上就沒有問題了。
+
+C:\Web\TestWeb>git add .
+
+C:\Web\TestWeb>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   N1056720_簡維辰.txt
+
+
+Warning: Your console font probably doesn't support Unicode. If you experience s
+trange characters in the output, consider switching to a TrueType font such as C
+onsolas!
+
+C:\Web\TestWeb>git push
+Username for 'https://github.com': n1056720
+Password for 'https://n1056720@github.com':
+remote: Permission to scliu99/TestWeb.git denied to N1056720.
+fatal: unable to access 'https://github.com/scliu99/TestWeb/': The requested URL
+ returned error: 403
+
+而上述的問題，經過email詢問，確定是權限尚未開放給N1056720的原因。
