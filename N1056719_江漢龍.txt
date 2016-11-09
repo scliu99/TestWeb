@@ -1,5 +1,11 @@
 ﻿我遇到的問題，以及排除問題的過程
 
+* 一開始一直出現驗證失敗，經過與老師確認，已經邀請為共同創作
+* 試了好幾次還是不行，最後，乾脆不透過公司網路，改由手機網路就可以成功
+
+PS:真是奇怪，因為 GitHub 走的是 443，我從 Browser 可以連接，奇怪的是，為何要透過手機才能成功，不過還是感謝老師的幫忙
+
+
 Microsoft Windows [版本 6.1.7601]
 Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
 
@@ -87,5 +93,83 @@ remote: You must verify your email address.
 remote: See https://github.com/settings/emails.
 fatal: unable to access 'https://github.com/scliu99/TestWeb/': The requested URL
  returned error: 403
+
+F:\Temp\20161107\TestWeb>git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': N1056719
+Password for 'https://56719@github.com/':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/scliu99/TestWeb/'
+
+F:\Temp\20161107\TestWeb>git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': n1056719
+Password for 'https://n1056719@github.com/':
+remote: You must verify your email address.
+remote: See https://github.com/settings/emails.
+fatal: unable to access 'https://github.com/scliu99/TestWeb/': The requested URL
+ returned error: 403
+
+F:\Temp\20161107\TestWeb>git push
+Everything up-to-date
+
+F:\Temp\20161107\TestWeb>git commit
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+        "N1056719_\346\261\237\346\274\242\351\276\215.txt"
+
+nothing added to commit but untracked files present
+
+F:\Temp\20161107\TestWeb>git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+F:\Temp\20161107\TestWeb>git add .
+
+F:\Temp\20161107\TestWeb>git commit
+Aborting commit due to empty commit message.
+
+F:\Temp\20161107\TestWeb>git commit 'N1056719'
+error: pathspec ''N1056719'' did not match any file(s) known to git.
+
+F:\Temp\20161107\TestWeb>git commit N1056719
+error: pathspec 'N1056719' did not match any file(s) known to git.
+
+F:\Temp\20161107\TestWeb>git commit
+Aborting commit due to empty commit message.
+
+F:\Temp\20161107\TestWeb>git commit
+Aborting commit due to empty commit message.
+
+F:\Temp\20161107\TestWeb>git push
+Everything up-to-date
+
+F:\Temp\20161107\TestWeb>git commit N1056719
+error: pathspec 'N1056719' did not match any file(s) known to git.
+
+F:\Temp\20161107\TestWeb>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   "N1056719_\346\261\237\346\274\242\351\276\215.txt"
+
+
+F:\Temp\20161107\TestWeb>git commit -m N1056719
+[master 966c79e] N1056719
+ 1 file changed, 91 insertions(+)
+ create mode 100644 "N1056719_\346\261\237\346\274\242\351\276\215.txt"
+
+F:\Temp\20161107\TestWeb>git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.12 KiB | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/scliu99/TestWeb
+   3d401d3..966c79e  master -> master
 
 F:\Temp\20161107\TestWeb>
