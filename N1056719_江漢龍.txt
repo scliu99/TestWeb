@@ -1,0 +1,91 @@
+﻿我遇到的問題，以及排除問題的過程
+
+Microsoft Windows [版本 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\JohnnyChiang>f:
+
+F:\>cd F:\Temp\20161107
+
+F:\Temp\20161107>git clone https://github.com/scliu99/TestWeb
+Cloning into 'TestWeb'...
+remote: Counting objects: 22, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 22 (delta 5), reused 22 (delta 5), pack-reused 0
+Unpacking objects: 100% (22/22), done.
+
+F:\Temp\20161107>git push TestWeb
+fatal: Not a git repository (or any of the parent directories): .git
+
+F:\Temp\20161107>git push https://github.com/scliu99/TestWeb
+fatal: Not a git repository (or any of the parent directories): .git
+
+F:\Temp\20161107>git push
+fatal: Not a git repository (or any of the parent directories): .git
+
+F:\Temp\20161107>git push scliu99/TestWeb
+fatal: Not a git repository (or any of the parent directories): .git
+
+F:\Temp\20161107>git push scliu99
+fatal: Not a git repository (or any of the parent directories): .git
+
+F:\Temp\20161107>git remote -v
+fatal: Not a git repository (or any of the parent directories): .git
+
+F:\Temp\20161107>git remote
+fatal: Not a git repository (or any of the parent directories): .git
+
+F:\Temp\20161107>dir
+ 磁碟區 F 中的磁碟沒有標籤。
+ 磁碟區序號:  0123-4567
+
+ F:\Temp\20161107 的目錄
+
+2016/11/08  下午 02:01    <DIR>          .
+2016/11/08  下午 02:01    <DIR>          ..
+2016/11/09  上午 08:53    <DIR>          TestWeb
+               0 個檔案               0 位元組
+               3 個目錄  18,985,517,056 位元組可用
+
+F:\Temp\20161107>cd TestWeb
+
+F:\Temp\20161107\TestWeb>git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': N1056719
+Password for 'https://N1056719@github.com/':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/scliu99/TestWeb/'
+
+F:\Temp\20161107\TestWeb>git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': n1056719@ntub.edu.tw
+Password for 'https://n1056719@ntub.edu.tw@github.com/':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/scliu99/TestWeb/'
+
+F:\Temp\20161107\TestWeb>git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': n1056719@ntub.edu.tw
+Password for 'https://n1056719@ntub.edu.tw@github.com/':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/scliu99/TestWeb/'
+
+F:\Temp\20161107\TestWeb>git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': N1056719
+Password for 'https://N1056719@github.com/':
+remote: You must verify your email address.
+remote: See https://github.com/settings/emails.
+fatal: unable to access 'https://github.com/scliu99/TestWeb/': The requested URL
+ returned error: 403
+
+F:\Temp\20161107\TestWeb>git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': N1056719
+Password for 'https://N1056719@github.com/':
+remote: You must verify your email address.
+remote: See https://github.com/settings/emails.
+fatal: unable to access 'https://github.com/scliu99/TestWeb/': The requested URL
+ returned error: 403
+
+F:\Temp\20161107\TestWeb>
