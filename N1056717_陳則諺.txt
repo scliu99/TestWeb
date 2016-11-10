@@ -24,7 +24,7 @@
 
 遇到的問題：
 
-當中遇到問題是都會忘記commit和pull導致有人更新時push會有衝突
+當中遇到問題是都會忘記commit和pull導致有人更新時push會失敗
 
 出現以下問題要請老師給一下權限
 remote: Permission to scliu99/TestWeb.git denied to LeoYanisme.
