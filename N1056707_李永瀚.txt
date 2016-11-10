@@ -1,0 +1,27 @@
+
+
+*建檔上傳問題
+
+git remote add n1056707 https://github.com/scliu99/TestWeb.git 建檔
+
+建好後還要再 git pull n1056707一次上傳才會成功
+
+不然無法上傳會出現如下問題：
+git push n1056707
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream n1056707 master
+
+*需要初始化重找檔案位子
+
+git init
+Initialized empty Git repository in D:/1/.git/
+
+否則他會找不到檔案
+
+git remote -v
+fatal: Not a git repository (or any of the parent directories): .git
+
+
+
