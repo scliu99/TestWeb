@@ -12,11 +12,13 @@
 
 5. $ cd (你剛剛創的資料夾下的TestWeb位置)
 
-6. $ git commit -m "你的學號"
+6. $ git add .
 
-7. $ git push 
+7. $ git commit -m "你的學號"
 
-8. 輸入你的github帳號密碼
+8. $ git push 
+
+9. 輸入你的github帳號密碼
 
 打完收工！
 
