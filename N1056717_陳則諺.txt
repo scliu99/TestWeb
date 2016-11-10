@@ -17,7 +17,7 @@
 
 打完收工！
 
-當中遇到問題是都會忘記commit
+當中遇到問題是都會忘記commit導致push會有衝突
 
 出現以下問題要請老師給一下權限
 remote: Permission to scliu99/TestWeb.git denied to LeoYanisme.
