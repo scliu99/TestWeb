@@ -4,7 +4,7 @@
 
 2. 創一個資料夾
 
-2. $ cd (剛剛的資料夾位置)
+2. $ cd (剛剛新創的資料夾位置)
 
 3. $ git clone https://github.com/scliu99/TestWeb.git
 
