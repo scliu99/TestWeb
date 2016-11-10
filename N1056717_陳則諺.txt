@@ -14,7 +14,9 @@
 
 6. $ git commit -m "你的學號"
 
-7. $ git push
+7. $ git push 
+
+8. 輸入你的github帳號密碼
 
 打完收工！
 
