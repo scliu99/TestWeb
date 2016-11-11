@@ -29,6 +29,8 @@
 * 新增檔案順序： 直接去資料夾新增檔案  ->  $ git add .  ->  $ git commit  ->  $ git push
 
 * 更新檔案順序： 修改過檔案  ->  $ git commit  ->  $ git add .  ->  $ git commit  ->  $ git push
+    
+    ( 以上兩者順序錯皆會出現 Everything up-to-date 的錯誤 )
 
 * 要開始作業前一定要先pull下來Git上最新版本的code在同步自己更新的內容才比較不會遇到衝突問題
 
