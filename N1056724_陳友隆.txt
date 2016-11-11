@@ -1,3 +1,8 @@
 remote: Permission to scliu99/TestWeb.git denied to N1056724.
 fatal: unable to access 'https://github.com/scliu99/TestWeb/': The requested URL returned error: 403
  
+後來請老師開立權限後
+
+又又參考簡同學的部份
+
+用Git CMD 下指令的方式，終於上傳成功

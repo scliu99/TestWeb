@@ -1,3 +1,22 @@
 remote: Permission to scliu99/TestWeb.git denied to n1056726.
 fatal: unable to access 'https://github.com/scliu99/TestWeb/': The requested URL returned error: 403
 查詢為無權限，已請老師加入權限
+
+
+檔名有中文無法上傳
+經查詢 下指令
+C:\Web\TestWeb>git config --global core.quotepath off
+即可正常上傳
+
+
+
+git.exe push --progress "origin" master:master
+
+To https://github.com/scliu99/TestWeb
+! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/scliu99/TestWeb'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+需要先git pull 在git push .

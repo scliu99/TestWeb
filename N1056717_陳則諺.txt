@@ -1,0 +1,35 @@
+流程：
+
+1. 先辦一個github帳號
+
+2. 創一個資料夾
+
+2. $ cd (剛剛新創的資料夾位置)
+
+3. $ git clone https://github.com/scliu99/TestWeb.git
+
+4. 到你剛剛新創資料夾下的TestWeb的裡面新增一個檔案 ex: N1056717_帥哥.txt
+
+5. $ cd (你剛剛創的資料夾下的TestWeb位置)
+
+6. $ git add .
+
+7. $ git commit -m "你的學號"
+
+8. $ git push 
+
+9. 輸入你的github帳號密碼
+
+打完收工！
+
+
+
+遇到的問題：
+
+當中遇到問題是都會忘記commit和pull導致有人更新時push會失敗
+
+出現以下問題要請老師給一下權限
+remote: Permission to scliu99/TestWeb.git denied to LeoYanisme.
+fatal: unable to access 'https://github.com/scliu99/TestWeb.git/': The requested URL returned error: 403
+
+最重要一點記得當老師給你權限要記得去收信這樣哈哈
