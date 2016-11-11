@@ -38,6 +38,6 @@
   remote: Permission to scliu99/TestWeb.git denied to LeoYanisme.
   fatal: unable to access 'https://github.com/scliu99/TestWeb.git/': The requested URL returned error: 403
 
-* 最後有找到一個 GitHub Desktop 軟體，版本控管可以更簡單 ~
+* 最後希望可以找一個可以更直覺的版本控管軟體最後有找到一個 GitHub Desktop 軟體，不需打指令，介面化版本控管 ~
 
 * 最重要一點記得當老師給你權限要記得去收信這樣哈哈 ~
